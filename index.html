@@ -10,7 +10,9 @@
 <body>
     <div class="container">
         <h1>Welcome to My Project</h1>
-        <form id="greetingForm">
+        <p>Get a personalized greeting by entering your name below.</p>
+
+        <form id="greetingForm" aria-label="Greeting Form">
             <label for="name">Enter your name:</label>
             <input type="text" id="name" placeholder="Your Name" required>
             <button type="submit">Greet Me!</button>
@@ -19,6 +21,14 @@
         <div id="result" aria-live="polite"></div> 
         <div id="result"></div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 My Project. All Rights Reserved.</p>
+        <nav>
+            <a href="#greetingForm">Go to Form</a> | 
+            <a href="https://github.com/AbhishekO27/Smart-Health-BOT" target="_blank">View on GitHub</a> 
+        </nav>
+    </footer>
 
     <script src="script.js"></script>
 </body>
