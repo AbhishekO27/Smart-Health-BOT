@@ -14,3 +14,4 @@ def generate_greeting(name):
     else:
         greeting = f"Hello, {name}! Burning the midnight oil, huh?"
     return greeting
+
