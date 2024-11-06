@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from datetime import datetime
+import numpy as np 
 
 app = Flask(__name__)
 
