@@ -1,18 +1,21 @@
-from flask import Flask, request, jsonify, render_template
-from datetime import datetime
-import numpy as np 
+import matplotlib.pyplot as plt
+import numpy as np
 
-app = Flask(__name__)
+print("Loading the Smart Health Bot. Please wait...")
 
-def generate_greeting(name):
-    current_hour = datetime.now().hour
-    if 5 <= current_hour < 12:
-        greeting = f"Good morning, {name}! Hope you have a fantastic start to your day!"
-    elif 12 <= current_hour < 18:
-        greeting = f"Good afternoon, {name}! Hope your day is going great!"
-    elif 18 <= current_hour < 21:
-        greeting = f"Good evening, {name}! Winding down for the day?"
-    else:
-        greeting = f"Hello, {name}! Burning the midnight oil, huh?"
-    return greeting
+
+num_cases = 100
+
+# Generate synthetic health data
+age = np.random.randint(18, 100, num_cases)                     
+gender = np.random.randint(1, 4, num_cases)                     
+bp_systolic = np.random.randint(90, 180, num_cases)             
+bp_diastolic = np.random.randint(60, 120, num_cases)            
+heart_rate = np.random.randint(50, 120, num_cases)              
+cholesterol = np.random.randint(150, 300, num_cases)         
+glucose_level = np.random.randint(70, 200, num_cases)           
+BMI = np.round(np.random.uniform(18, 40, num_cases), 2)        
+physical_activity = np.random.randint(1, 11, num_cases)         
+oxygen_saturation = np.random.randint(90, 100, num_cases)       
+symptoms = np.random.randint(1, 8, num_cases)
 
