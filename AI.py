@@ -235,6 +235,7 @@ for i in range(1,num_cases2+1,1):
   a9=int(input("Enter "+a1+"'s Oxygen saturation level\n"))
   a10=int(input("Enter "+a1+"'s symptoms info based upon \n Enter 1 for chest pain \n Enter 2 for shortness of breath \n Enter 3 for palpitations \n Enter 4 for chest pain and shortness of breath \n Enter 5 for shortness of breath and palpitations \n Enter 6 for chest pain and palpitations \n Enter 7 for all of them\n"))      
 
+
   name.append(a1)
   bp_systolic2.append(a2)
   bp_diastolic2.append(a3)
